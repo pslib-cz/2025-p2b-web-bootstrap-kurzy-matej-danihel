@@ -18,15 +18,104 @@
                 obtížnosti a zaměření.</p>
         </header>
 
-        <div class="bg-white rounded-3 shadow p-4">
+        <main class="bg-white rounded-3 shadow p-4">
             <div class="table-responsive rounded">
                 <!-- todo table -->
-
+                <table class="table table-striped table-hover table-bordered align-middle">
+                    <caption class="caption-top p-3 fs-5 fw-semibold text-secondary">
+                        Přehled dostupných kurzů - školní rok 2025/2026
+                    </caption>
+                    <thead class="table-info">
+                        <tr>
+                            <th scope="col">Název kurzu</th>
+                            <th scope="col">Lektor</th>
+                            <th scope="col">Cena</th>
+                            <th scope="col">Volná místa</th>
+                            <th scope="col">Registrace</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col" colspan="3">Začátečnické kurzy</th>
+                            <td colspan="2" class="text-center fw-semibold">
+                                <div class="form-check form-switch d-inline-block">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="switchBeginners">
+                                    <label class="form-check-label" for="switchBeginners">Vybrat vše</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col" rowspan="2">HTML & CSS základy</th>
+                            <td>Mgr. Jana Nováková</td>
+                            <td>2 500 Kč</td>
+                            <td class="text-success fw-semibold">15/20</td>
+                            <td rowspan="2" class="table-success">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="htmlBasics">
+                                    <label class="form-check-label" for="htmlBasics">Přihlásit</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <small class="text-muted d-block">
+                                    <strong>Popis:</strong> Naučte se základy značkovacího jazyka HTML5 a kaskádových stylů CSS3. Kurz
+                                    zahrnuje sémantické značky, flexbox, grid a responzivní design.
+                                </small>
+                                <small class="text-muted d-block mt-1">
+                                    <strong>Termín:</strong> Úterý 16:00-18:00 | <strong>Začátek:</strong> 15. 1. 2026
+                                </small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col" rowspan="2">JavaScript pro začátečníky</th>
+                            <td>Ing. Petr Svoboda</td>
+                            <td>3 200 Kč</td>
+                            <td class="text-warning fw-semibold">8/20</td>
+                            <td rowspan="2" class="table-success">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="jsBasics">
+                                    <label class="form-check-label" for="jsBasics">Přihlásit</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <small class="text-muted d-block">
+                                    <strong>Popis:</strong> Úvod do programování v JavaScriptu. Proměnné, funkce, podmínky, cykly, práce
+                                    s DOM a základy událostí.
+                                </small>
+                                <small class="text-muted d-block mt-1">
+                                    <strong>Termín:</strong> Čtvrtek 17:00-19:00 | <strong>Začátek:</strong> 20. 1. 2026
+                                </small>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="col" colspan="3">Pokročilé kurzy</th>
+                            <td colspan="2" class="text-center fw-semibold">
+                                <div class="form-check form-switch d-inline-block">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="switchAdvanced">
+                                    <label class="form-check-label" for="switchAdvanced">Vybrat vše</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col" rowspan="2">React - moderní framework</th>
+                            <td>Bc. Martin Dvořák</td>
+                            <td>4 500 Kč</td>
+                            <td class="text-danger fw-semibold">0/20</td>
+                            <td rowspan="2" class="table-danger">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="reactCourse">
+                                    <label class="form-check-label" for="reactCourse">Přihlásit</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
                 <!-- helper block -->
-                <div class="form-check form-switch d-inline-block">
-                    <input class="form-check-input" type="checkbox" role="switch" id="switchBeginners">
-                    <label class="form-check-label" for="switchBeginners">Vybrat vše</label>
-                </div>
 
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="htmlBasics">
@@ -101,7 +190,7 @@
                 <p class="mb-0">Studenti střední školy mají slevu 20% na všechny kurzy. Při registraci do 3 a více kurzů
                     získáte další slevu 15%. Platbu lze rozložit na splátky.</p>
             </div>
-        </div>
+        </main>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
